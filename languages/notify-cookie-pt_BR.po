@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Notify Cookie Jcmartim\n"
+"POT-Creation-Date: 2021-05-04 13:55-0300\n"
+"PO-Revision-Date: 2021-05-04 13:57-0300\n"
+"Last-Translator: João Carlos Martimbianco <jcmartim@gmail.com>\n"
+"Language-Team: João Carlos Martimbianco <jcmartim@gmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: notify-cookie.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: notify-cookie.php:17
+msgid "Direct access to this plugin is not allowed!"
+msgstr "O acesso direto a este plugin não é permitido!"
+
+#: notify-cookie.php:41
+msgid ""
+"Error: Please enter the notification message in the \"Notification text\" "
+"field!"
+msgstr ""
+"Erro: Por favor, insira a mensagem de notificação no campo \"Texto de "
+"notificação\"!"
+
+#: notify-cookie.php:60
+msgid "Error: Please select your \"Privacy Policy\" page in the page selector!"
+msgstr ""
+"Erro: Por favor, selecione sua página de \"Política de Privacidade\" no "
+"seletor de página!"
+
+#: notify-cookie.php:85
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Você não tem permissões suficientes para acessar esta página."
+
+#: notify-cookie.php:97
+msgid ""
+"This plugin was originally designed to meet a personal need of mine, while "
+"developing a theme for my website. It was then that I decided to make it "
+"available to the community."
+msgstr ""
+"Este plug-in foi originalmente projetado para atender a uma necessidade "
+"pessoal minha, enquanto desenvolvia um tema para o meu site. Foi então que "
+"decidi disponibilizá-lo à comunidade."
+
+#: notify-cookie.php:98
+msgid "What is this plugin for?"
+msgstr "Para que serve esse plug-in?"
+
+#: notify-cookie.php:99
+msgid ""
+"The idea is to notify users of the site, in an easy way, that some data is "
+"collected, through cookies, so that you guarantee that your website, is in "
+"accordance with the laws of the European Union when it is visited by a user "
+"from the region . I know that there are several plugins that are much more "
+"complex than this one, but as I said, the idea was to do something simple "
+"and practical. This will not consume large resources of the site and will do "
+"the job!"
+msgstr ""
+"A ideia é notificar os usuários do site, de uma maneira fácil, que alguns "
+"dados são coletados, através de cookies, para que você garanta que seu site, "
+"esteja de acordo com as leis da União Europeia quando é visitada por um "
+"usuário da região . Eu sei que há vários plug-ins que são muito mais "
+"complexos do que este, mas como eu disse, a ideia era fazer algo simples e "
+"prático. Não consome grandes recursos do site e faz o trabalho!"
+
+#: notify-cookie.php:100
+msgid "How it works?"
+msgstr "Como funciona?"
+
+#: notify-cookie.php:101
+msgid ""
+"This simple plugin saves a file in the localStorage of the user's browser, "
+"after he clicks the proceed button, thus ensuring that he does not have to "
+"click again when returning to the website or when changing pages. Unless the "
+"browser is closed and opened again, the user then has to accept by clicking "
+"the button again."
+msgstr ""
+"Este plug-in simplesmente salva um arquivo no localStorage do navegador do "
+"usuário, após ele clica no botão prosseguir, garantindo assim que ele não "
+"precisará clicar novamente ao retornar ao site ou ao alterar as páginas. A "
+"menos que o navegador seja fechado e aberto novamente, então usuário deverá "
+"aceitar clicando no botão novamente."
+
+#: notify-cookie.php:102
+msgid "Did you like this plugin?"
+msgstr "Gostou deste plug-in?"
+
+#: notify-cookie.php:103
+msgid ""
+"This plugin is free and will be like this forever. If you liked it, consider "
+"donating some small change to help us maintain and perfect this project. "
+"Well, the plugin is free, but its development requires a lot of effort and "
+"dedication, not counting the costs for its maintenance. Thanks!"
+msgstr ""
+"Este plug-in é gratuito e será assim para sempre. Se você gostou, considere "
+"doar uma pequena quantia para nos ajudar a manter e aperfeiçoar este "
+"projeto. Bem, o plug-in é gratuito, mas seu desenvolvimento requer muito "
+"esforço e dedicação, sem contar os custos para sua manutenção. Obrigado!"
+
+#: notify-cookie.php:116
+msgid "Notification text"
+msgstr "Texto de notificação"
+
+#: notify-cookie.php:117
+msgid ""
+"Write your personalized notification here. This text will appear in the "
+"content of the informational message about cookies. Be free to fully edit "
+"this content to suit your needs."
+msgstr ""
+"Escreva sua notificação personalizada aqui. Este texto aparecerá no conteúdo "
+"da mensagem informativa sobre cookies. Esteja livre para editar totalmente "
+"este conteúdo para atender às suas necessidades."
+
+#: notify-cookie.php:139
+msgid "Select your Privacy Policy page:"
+msgstr "Selecione sua Página de Política de Privacidade:"
+
+#: notify-cookie.php:141
+msgid ""
+"Please, here you must have already created a Privacy Policy page. If you "
+"haven't already? Now is the time to create one."
+msgstr ""
+"Por favor, aqui você já deve ter criado uma página de política de "
+"privacidade. Se você ainda não o fez? Agora é a hora de criar uma."
+
+#: notify-cookie.php:150
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Selecionar &mdash;"
+
+#: notify-cookie.php:187
+msgid "For further clarification, read our"
+msgstr "Para mais esclarecimentos, leia nosso"
+
+#: notify-cookie.php:187
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
+
+#: notify-cookie.php:189
+msgid "Proceed"
+msgstr "Prosseguir"
+
+#. Plugin Name of the plugin/theme
+msgid "Notify Cookie Jcmartim"
+msgstr "Notify Cookie Jcmartim"
+
+#. Plugin URI of the plugin/theme
+msgid "https://jcmartim.com.br/plugins/notify-cookie"
+msgstr "https://jcmartim.com.br/plugins/notify-cookie"
+
+#. Description of the plugin/theme
+msgid "Simple notification of cookies to put on your website."
+msgstr "Simples notificação de cookies para colocar em seu site."
+
+#. Author of the plugin/theme
+msgid "João Carlos Martimbianco"
+msgstr "João Carlos Martimbianco"
+
+#. Author URI of the plugin/theme
+msgid "https://jcmartim.com.br"
+msgstr "https://jcmartim.com.br"
+
+#~ msgid "How does the plug-in work?"
+#~ msgstr "Para que serve esse plug-in?"

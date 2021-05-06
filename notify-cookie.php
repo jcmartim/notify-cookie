@@ -7,6 +7,9 @@
  * Version:           1.0
  * Author:            João Carlos Martimbianco
  * Author URI:        https://jcmartim.com.br
+ * Requires at least: 4.7
+ * Tested up to:      5.4
+ * Requires PHP:      7.0
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       notify-cookie
@@ -92,17 +95,16 @@ function notify_cookie_html() {
 </style>
   <div class="notify-cookie">
     <h1><?= esc_html( get_admin_page_title() ) ?></h1>
-    <p><?= _e("This plugin was originally designed to meet a personal need of mine, while developing a theme for my website. It was then that I decided to make it available to the community.", 'notify-cookie'); ?></p>
-    <h4><?= _e("What is this plugin for?", 'notify-cookie'); ?></h4>
-    <p><?= _e("The idea is to notify users of the site, in an easy way, that some data is collected, through cookies, so that you guarantee that your website, is in accordance with the laws of the European Union when it is visited by a user from the region . I know that there are several plugins that are much more complex than this one, but as I said, the idea was to do something simple and practical. This will not consume large resources of the site and will do the job!", 'notify-cookie'); ?></p>
-    <h4><?= _e("How it works?", 'notify-cookie'); ?></h4>
-    <p><?= _e("This simple plugin saves a file in the localStorage of the user's browser, after he clicks the proceed button, thus ensuring that he does not have to click again when returning to the website or when changing pages. Unless the browser is closed and opened again, the user then has to accept by clicking the button again.", 'notify-cookie'); ?></p>
-    <h4><?= _e("Did you like this plugin?", 'notify-cookie'); ?></h4>
-	  <p><?= _e("This plugin is free and will be like this forever. If you liked it, consider donating some small change to help us maintain and perfect this project. Well, the plugin is free, but its development requires a lot of effort and dedication, not counting the costs for its maintenance. Thanks!", 'notify-cookie'); ?></p>
+    <p><?= esc_html_e("This plugin was originally designed to meet a personal need of mine, while developing a theme for my website. It was then that I decided to make it available to the community.", 'notify-cookie'); ?></p>
+    <h4><?= esc_html_e("What is this plugin for?", 'notify-cookie'); ?></h4>
+    <p><?= esc_html_e("The idea is to notify users of the site, in an easy way, that some data is collected, through cookies, so that you guarantee that your website, is in accordance with the laws of the European Union when it is visited by a user from the region . I know that there are several plugins that are much more complex than this one, but as I said, the idea was to do something simple and practical. This will not consume large resources of the site and will do the job!", 'notify-cookie'); ?></p>
+    <h4><?= esc_html_e("How it works?", 'notify-cookie'); ?></h4>
+    <p><?= esc_html_e("This simple plugin saves a file in the localStorage of the user's browser, after he clicks the proceed button, thus ensuring that he does not have to click again when returning to the website or when changing pages. Unless the browser is closed and opened again, the user then has to accept by clicking the button again.", 'notify-cookie'); ?></p>
+    <h4><?= esc_html_e("Did you like this plugin?", 'notify-cookie'); ?></h4>
+	  <p><?= esc_html_e("This plugin is free and will be like this forever. If you liked it, consider donating some small change to help us maintain and perfect this project. Well, the plugin is free, but its development requires a lot of effort and dedication, not counting the costs for its maintenance. Thanks!", 'notify-cookie'); ?></p>
     <form action="https://www.paypal.com/donate" method="post" target="_black">
       <input type="hidden" name="hosted_button_id" value="3E7V4PQ2Y5C84" />
       <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-      <img alt="Donate" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
     </form>
   </div>
 </div>
@@ -111,7 +113,7 @@ function notify_cookie_html() {
       settings_fields( 'notify-cookie-settings-group' );
       do_settings_sections( 'notify-cookie-settings-group' );
     ?>
-    <h2 class="title"><?= _e('Notification text', 'notify-cookie'); ?></h2>
+    <h2 class="title"><?= esc_html_e('Notification text', 'notify-cookie'); ?></h2>
     <p><label for="notify_text"><?php echo __('Write your personalized notification here. This text will appear in the content of the informational message about cookies. Be free to fully edit this content to suit your needs.','notify-cookie'); ?></label></p>
     <p>
       <textarea class="large-text code" id="notify_text" name="text_notify_cookie" rows="3"><?php echo esc_attr( get_option('text_notify_cookie') ); ?></textarea>
@@ -134,9 +136,9 @@ function notify_cookie_html() {
 		<tr>
 			<th scope="row">
 				<label for="page_for_privacy_policy">
-					<?= _e( 'Select your Privacy Policy page:', 'notify-cookie' );?>
+					<?= esc_html_e( 'Select your Privacy Policy page:', 'notify-cookie' );?>
 				</label>
-        <p><?= _e("Please, here you must have already created a Privacy Policy page. If you haven't already? Now is the time to create one.", 'notify-cookie') ?></p>
+        <p><?= esc_html_e("Please, here you must have already created a Privacy Policy page. If you haven't already? Now is the time to create one.", 'notify-cookie') ?></p>
 			</th>
 			<td>
       <?php
@@ -182,9 +184,9 @@ $contentCookies = esc_attr( get_option('text_notify_cookie') );
 <div class="cookies">
   <p class="msg-cookies">
   <?=$contentCookies?>
-  <?= _e('For further clarification, read our', 'notify-cookie') ?> <a href='<?= get_permalink(get_option('select_notify_cookie')); ?>'><?= _e('Privacy Policy', 'notify-cookie'); ?></a>!
+  <?= esc_html_e('For further clarification, read our', 'notify-cookie') ?> <a href='<?= get_permalink(get_option('select_notify_cookie')); ?>'><?= esc_html_e('Privacy Policy', 'notify-cookie'); ?></a>!
   </p>
-  <button aria-label="Aceitar cookies" class="btn-cookies"><?= _e('Proceed', 'notify-cookie') ?></button>
+  <button aria-label="Aceitar cookies" class="btn-cookies"><?= esc_html_e('Proceed', 'notify-cookie') ?></button>
 </div>
 <script>
   if (localStorage.cookies) {
@@ -196,20 +198,6 @@ $contentCookies = esc_attr( get_option('text_notify_cookie') );
   };
   const btnCookies = document.getElementsByClassName("btn-cookies")[0];
   btnCookies.onclick = acceptCookies;
-  if (localStorage.active) {
-    document.querySelector(".night-mode").classList.add("active");
-    document.querySelector(".btn-night-mode").classList.add("active");
-  } 
-  const nightMode = function() {
-    const startNightMode = document.querySelector(".night-mode"); 
-    if ((" " + startNightMode.className + " ").replace(/[\n\t]/g, " ").indexOf("active") > -1) {
-      startNightMode.classList.remove("active");
-      localStorage.removeItem("active");
-    } else {
-      startNightMode.classList.add("active");
-      localStorage.setItem("active", "active");
-    }
-  };
 </script>
 <?php
 };

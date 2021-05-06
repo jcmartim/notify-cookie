@@ -15,19 +15,21 @@
  * Text Domain:       notify-cookie
  * Domain Path:       /languages
  **/
+//*
 
+// Safety!
 if(! function_exists('add_action')){
   echo __('Direct access to this plugin is not allowed!', 'notify-cookie');
   exit;
 }
 
-//Inicializa a tradução
+//******** Initialize the translation. ********
 function my_plugin_init() {
   load_plugin_textdomain( 'notify-cookie', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
 }
 add_action( 'plugins_loaded', 'my_plugin_init' );
 
-//Interface de adminitração do plugin
+//Plugin settings page
 add_action( 'admin_init', 'notify_cookie');
 function notify_cookie() {
   register_setting(
@@ -68,7 +70,7 @@ function notify_cookie() {
   );
 }
 
-//cria uma pagina para as configurações do plugin
+//******** Front-end settings page. *******
 function notify_cookie_menu() {
 	add_options_page(
     'Notify Cookie Jcmartim',
@@ -165,10 +167,10 @@ function notify_cookie_html() {
 <?php
 };
 
-//Funcinalidade do plugin
+//***** Front-end *******
 add_action('wp_footer', 'notify_cookies_footer');
 function notify_cookies_footer(){
-//Frase de notificação do cookie e html
+//Variable containing the notification phrase passed via the plugin's configuration page.
 $contentCookies = esc_attr( get_option('text_notify_cookie') );
 ?>
 <style>

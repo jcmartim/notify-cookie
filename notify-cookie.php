@@ -31,7 +31,7 @@ if(! function_exists('add_action')){
 }
 
 //******** Initialize the translation. ********
-if( ! defined( 'notify_cookie_init' ) ) {
+if( ! function_exists( 'notify_cookie_init' ) ) {
 
   function notify_cookie_init() {
     load_plugin_textdomain( 'notify-cookie', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
@@ -41,7 +41,7 @@ if( ! defined( 'notify_cookie_init' ) ) {
 }
 
 //Plugin settings page
-if( ! defined( 'notify_cookie' ) ) {
+if( ! function_exists( 'notify_cookie' ) ) {
 
   function notify_cookie() {
     register_setting(
@@ -87,7 +87,7 @@ if( ! defined( 'notify_cookie' ) ) {
 
 
 //******** Front-end settings page. *******
-if( ! defined( 'notify_cookie_menu' ) ) {
+if( ! function_exists( 'notify_cookie_menu' ) ) {
 
   function notify_cookie_menu() {
     add_options_page(
@@ -102,7 +102,7 @@ if( ! defined( 'notify_cookie_menu' ) ) {
 
 }
 
-if( ! defined( 'notify_cookie_html' ) ) {
+if( ! function_exists( 'notify_cookie_html' ) ) {
 
   function notify_cookie_html() {
     if ( !current_user_can( 'manage_options' ) )  {
@@ -191,7 +191,7 @@ if( ! defined( 'notify_cookie_html' ) ) {
 }
 
 //***** Front-end *******
-if( ! defined( 'notify_cookies_footer' ) ) {
+if( ! function_exists( 'notify_cookies_footer' ) ) {
 
   function notify_cookies_footer(){
     //Variable containing the notification phrase passed via the plugin's configuration page.

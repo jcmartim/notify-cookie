@@ -6,7 +6,7 @@ Contributors: jcmartim
 Tags: cookies, cookie, cookie notice, notify, notification, cookie notify, notify cookie, notification cookies
 Donate link: https://www.paypal.com/donate?token=aNLQaTSpDQCTa_ZIu3xNb86qcgb2ubydXpDMCElP1MHKp-zGz0Y9M8cllvH214r9eql4GCr-bVIlhZMi
 Requires at least: 4.7
-Tested up to: 5.4
+Tested up to: 5.7.1
 Requires PHP: 7.0
 Stable tag: trunk
 License: GPLv2 or later

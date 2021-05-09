@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Notify Cookie Jcmartim\n"
 "POT-Creation-Date: 2021-05-04 13:55-0300\n"
-"PO-Revision-Date: 2021-05-09 15:13-0300\n"
+"PO-Revision-Date: 2021-05-09 17:55-0300\n"
 "Language-Team: João Carlos Martimbianco <jcmartim@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: notify-cookie.php:100
 msgid "How it works?"
-msgstr ""
+msgstr "Como funciona?"
 
 #: notify-cookie.php:101
 msgid ""
@@ -87,6 +87,12 @@ msgid ""
 "browser is closed and opened again, the user then has to accept by clicking "
 "the button again."
 msgstr ""
+"Este plugin simple guarda un archivo en el almacenamiento local del "
+"navegador del usuario, después de hacer clic en el botón Proconte, "
+"asegurando así que no tiene que hacer clic nuevamente al regresar al sitio "
+"web o al cambiar las páginas. A menos que el navegador esté cerrado y abrido "
+"nuevamente, el usuario tiene que aceptar haciendo clic en el botón "
+"nuevamente."
 
 #: notify-cookie.php:102
 msgid "Did you like this plugin?"

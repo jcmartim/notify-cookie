@@ -85,7 +85,6 @@ if( ! function_exists( 'notify_cookie' ) ) {
 
 }
 
-
 //******** Front-end settings page. *******
 if( ! function_exists( 'notify_cookie_menu' ) ) {
 
@@ -95,12 +94,13 @@ if( ! function_exists( 'notify_cookie_menu' ) ) {
       'Notify Cookie',
       'manage_options',
       'notify-cookie',
-      'notify_cookie_html'
+      'JCM_Notify_Cookie\notify_cookie_html'
     );
   }
   add_action( 'admin_menu', 'JCM_Notify_Cookie\notify_cookie_menu' );
 
 }
+
 
 if( ! function_exists( 'notify_cookie_html' ) ) {
 

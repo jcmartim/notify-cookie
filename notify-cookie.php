@@ -4,7 +4,7 @@
  * Plugin Name:       Notify Cookie Jcmartim
  * Plugin URI:        https://jcmartim.com.br/plugins/notify-cookie
  * Description:       Simple notification of cookies to put on your website.
- * Version:           1.0
+ * Version:           1.0.0
  * Author:            João Carlos Martimbianco
  * Author URI:        https://jcmartim.com.br
  * Requires at least: 4.7
